@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../spotify-search/spotify(1).svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify Search</title>
+</head>
+
+<body>
+    <header>
+        <h1>Spotify Search</h1>
+        <form>
+            <input type="search" name="query" placeholder="Type some text to search" required class="query-field" />
+            <select name="type" class="type-field">
+                <option value="artist">Artist</option>
+                <option value="album">Album</option>
+            </select>
+            <button>Search</button>
+        </form>
+    </header>
+
+    <section class="results">
+        <h2 class="result-title"></h2>
+        <ul class="result-list"></ul>
+        <p>
+            <button class="load-more-button">More</button>
+        </p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
